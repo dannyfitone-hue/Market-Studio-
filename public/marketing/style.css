@@ -12,7 +12,7 @@
 /* Premium dimensional platform marks from the approved hero direction. */
 .hero{position:relative;isolation:isolate}
 .hero-copy{position:relative;z-index:2}
-.hero-social-backdrop{position:absolute;z-index:0;inset:0 0 auto;height:650px;pointer-events:none;overflow:hidden}
+.hero-social-backdrop{position:absolute;z-index:0;top:0;left:50%;width:min(100%,1800px);height:780px;transform:translateX(-50%);pointer-events:none;overflow:visible}
 .social-mark{position:absolute;display:grid;place-items:center;padding:46px;color:white;opacity:.67;border:1px solid #ffffffb8;border-radius:58px;box-shadow:0 55px 95px #183d8245,0 18px 34px #17213d38,inset 0 3px 3px #ffffffe6,inset 0 -12px 24px #001b6c38;filter:saturate(1.16);transform-style:preserve-3d;animation:social-float 9s ease-in-out infinite}
 .social-mark:before{content:"";position:absolute;z-index:-1;inset:17px -18px -20px 17px;border-radius:inherit;background:#174ca8;box-shadow:0 18px 38px #102d6952;transform:translateZ(-1px)}
 .social-mark:after{content:"";position:absolute;inset:2px;border-radius:37px;background:linear-gradient(145deg,#ffffff5e 0%,transparent 34%,transparent 68%,#ffffff24 100%);pointer-events:none}
@@ -20,11 +20,11 @@
 .social-mark svg>*{fill:none;stroke:currentColor;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round}
 .social-mark svg path{fill:currentColor;stroke:none}
 .social-mark .social-mark-dot{fill:currentColor;stroke:none}
-.social-mark-instagram{width:270px;height:270px;left:clamp(-105px,1.5vw,28px);top:46px;background:linear-gradient(145deg,#ffd35a 0%,#ff356c 32%,#b22cff 67%,#4c67f5 100%);transform:perspective(750px) rotateY(20deg) rotateX(10deg) rotateZ(-11deg)}
+.social-mark-instagram{width:clamp(270px,20vw,350px);height:clamp(270px,20vw,350px);left:24px;top:52px;background:linear-gradient(145deg,#ffd35a 0%,#ff356c 32%,#b22cff 67%,#4c67f5 100%);transform:perspective(750px) rotateY(20deg) rotateX(10deg) rotateZ(-11deg)}
 .social-mark-instagram:before{background:linear-gradient(145deg,#8a1ba9,#303cb0)}
-.social-mark-facebook{width:285px;height:285px;right:clamp(-110px,1vw,20px);top:22px;background:linear-gradient(145deg,#2488ff 0%,#0866ff 45%,#0649b8 100%);transform:perspective(750px) rotateY(-20deg) rotateX(9deg) rotateZ(9deg);animation-delay:-3s}
+.social-mark-facebook{width:clamp(285px,21vw,365px);height:clamp(285px,21vw,365px);right:24px;top:30px;background:linear-gradient(145deg,#2488ff 0%,#0866ff 45%,#0649b8 100%);transform:perspective(750px) rotateY(-20deg) rotateX(9deg) rotateZ(9deg);animation-delay:-3s}
 .social-mark-facebook:before{background:linear-gradient(145deg,#0649b8,#032f79)}
-.social-mark-ads{width:330px;height:250px;right:7%;top:350px;padding:38px 50px 64px;background:linear-gradient(145deg,#1b7cff 0%,#075ad9 48%,#063b9f 100%);transform:perspective(750px) rotateY(-14deg) rotateX(12deg) rotateZ(-5deg);opacity:.62;animation-delay:-6s}
+.social-mark-ads{width:clamp(340px,25vw,410px);height:clamp(260px,19vw,310px);right:72px;top:405px;padding:38px 50px 64px;background:linear-gradient(145deg,#1b7cff 0%,#075ad9 48%,#063b9f 100%);transform:perspective(750px) rotateY(-14deg) rotateX(12deg) rotateZ(-5deg);opacity:.62;animation-delay:-6s}
 .social-mark-ads:before{background:linear-gradient(145deg,#0646b5,#022a70)}
 .social-mark-ads small{position:absolute;z-index:2;bottom:25px;font-size:15px;font-weight:800;letter-spacing:2.8px;color:#fff;text-shadow:0 4px 10px #00286c;white-space:nowrap}
 .creative-stage,.creative-browse,.stage-caption{position:relative;z-index:1}

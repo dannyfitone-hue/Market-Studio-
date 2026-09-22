@@ -1,3 +1,6 @@
+Updated social-logo layout: larger desktop marks positioned closer to the center; compact screens show all three in a centered row above the headline.
+Browser visual verification could not run because the local browser failed to launch.
+
 Latest local source snapshot: September 21, 2026.
 
 Includes the website and CRM with the latest local Vercel migration edits.
