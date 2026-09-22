@@ -1,0 +1,13 @@
+import Link from "next/link";
+import { CheckCircle2, Clock3, Download, Plus, Repeat2 } from "lucide-react";
+import { isMarketStudioAdmin, requireChatGPTUser } from "../chatgpt-auth";
+import { AppSidebar } from "../components/app-sidebar";
+import { ProjectList } from "./project-list";
+
+export const dynamic = "force-dynamic";
+export default async function Dashboard({searchParams}:{searchParams:Promise<{payment?:string}>}){
+  const user=await requireChatGPTUser("/dashboard");
+  const query=await searchParams;
+  const first=user.fullName?.split(" ")[0] || "there";
+  return <div className="app-frame"><AppSidebar active="Overview" adminAccess={isMarketStudioAdmin(user)}/><main className="app-main"><header className="app-header"><div><h1>Welcome back, {first}.</h1><p>Track every order from payment through final delivery.</p></div><Link href="/onboarding" className="button-primary"><Plus size={17}/> Order a new video</Link></header>{query.payment==="success"&&<div className="payment-result success"><CheckCircle2 size={21}/><div><b>Payment received</b><span>Your dashboard will update as soon as Stripe confirms the payment.</span></div></div>}{query.payment==="cancelled"&&<div className="payment-result cancelled"><Clock3 size={21}/><div><b>Checkout was not completed</b><span>Your order and uploads are safe. Pay whenever you are ready.</span></div></div>}<div className="dashboard-grid"><section className="panel projects-panel"><div className="panel-head"><div><h2>Your projects</h2><span className="muted">Live production status, review files, and final deliveries</span></div></div><ProjectList/></section><aside className="panel quick-order"><Repeat2 size={25}/><h2>Need another ad?</h2><p>Start a new order in minutes. Your account stays connected to every project and delivery.</p><Link href="/onboarding" className="button-light">Order another video</Link></aside><section className="panel"><div className="panel-head"><h2>How delivery works</h2><Clock3 size={20}/></div><div className="mini-steps"><div><span>1</span><p><b>Submit and pay</b><small>Complete the brief, upload assets, and check out securely.</small></p></div><div><span>2</span><p><b>Track production</b><small>Follow strategy, production, and Sales Genius review.</small></p></div><div><span>3</span><p><b>Review and download</b><small>Drafts and final files appear inside the project.</small></p></div></div></section><section className="panel"><div className="panel-head"><h2>Private file delivery</h2><Download size={20}/></div><p className="muted">Only you and Market Studio administrators can open your uploaded assets, drafts, and final videos.</p></section></div></main></div>
+}

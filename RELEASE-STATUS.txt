@@ -1,0 +1,6 @@
+Latest local source snapshot: September 21, 2026.
+
+Includes the website and CRM with the latest local Vercel migration edits.
+The production build passed previously. Runtime/browser verification and the new Vercel deployment are unfinished. Payment configuration is also incomplete.
+
+Credentials, local environment files, dependencies, and generated build files are excluded.
