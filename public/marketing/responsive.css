@@ -99,14 +99,6 @@ button, a, select, summary { -webkit-tap-highlight-color: rgba(6,104,249,.12); }
 }
 
 @media (max-width: 750px) {
-  .hero-growth-note { display: grid; grid-template-columns: minmax(0, 1fr) auto; width: 100%; max-width: 540px; gap: 12px; padding: 16px; margin-bottom: 25px; border-radius: 20px; }
-  .hero-growth-note:before { border-radius: 15px; }
-  .hero-growth-kicker { align-items: flex-start; gap: 6px; font-size: 8px; letter-spacing: .8px; }
-  .hero-growth-kicker i { margin-top: 3px; }
-  .hero-growth-copy p { font-size: clamp(16px, 4vw, 20px); line-height: 1.35; letter-spacing: -.3px; }
-  .hero-growth-metric { padding-left: 12px; }
-  .hero-growth-metric strong { font-size: clamp(34px, 9vw, 42px); letter-spacing: -1.6px; }
-  .hero-growth-metric>span { max-width: 78px; text-align: center; font-size: 9px; }
   .hero h1 { font-size: clamp(2.1rem, 8.8vw, 3.3rem); }
   .hero h1 > br, .hero-description > br { display: none; }
   .hero h1 > span { display: block; }
