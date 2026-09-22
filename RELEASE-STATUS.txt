@@ -1,3 +1,7 @@
+Latest update: soft pink neon sales-growth target above the hero headline; product/service launch positioning and free CRM messaging. The 30%+ figure is presented as a target, not an instant or guaranteed result. Not deployed.
+
+Latest visual update: crisp Instagram and Facebook vector artwork with beveled surfaces, extruded edges and raised white symbols. Standalone artwork rendered and visually inspected. Full browser layout not reverified.
+
 Updated social-logo layout: larger desktop marks positioned closer to the center; compact screens show all three in a centered row above the headline.
 Browser visual verification could not run because the local browser failed to launch.
 

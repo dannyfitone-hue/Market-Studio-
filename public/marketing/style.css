@@ -12,6 +12,22 @@
 /* Premium dimensional platform marks from the approved hero direction. */
 .hero{position:relative;isolation:isolate}
 .hero-copy{position:relative;z-index:2}
+/* A rose-neon inset keeps the growth target distinct from a promised result. */
+.hero-growth-note{position:relative;isolation:isolate;display:flex;align-items:center;justify-content:center;gap:28px;width:fit-content;max-width:100%;margin:0 auto 30px;padding:19px 26px;border:1px solid #f4a0c380;border-radius:23px;background:radial-gradient(ellipse at 12% 0%,#79385255,transparent 60%),linear-gradient(125deg,#241821,#130e17 72%);box-shadow:0 0 0 4px #ffb3d10a,0 0 26px #ee84b32b,0 12px 30px #4f254516,inset 0 1px 0 #ffe0ed33;text-align:left;color:#fff5fa}
+.hero-growth-note:before{content:"";position:absolute;inset:5px;border:1px solid #ffcae012;border-radius:18px;pointer-events:none}
+.hero-growth-copy{min-width:0}
+.hero-growth-kicker{display:flex;align-items:center;gap:8px;color:#eac5d6;font-size:9px;font-weight:600;letter-spacing:1.4px;line-height:1.5}
+.hero-growth-kicker i{flex:none;width:5px;height:5px;border-radius:50%;background:#ffc1dc;box-shadow:0 0 7px #ff90c0,0 0 16px #ff82b5}
+.hero-growth-copy p{margin:8px 0 0;font-size:21px;font-weight:550;letter-spacing:-.55px;line-height:1.3}
+.hero-growth-metric{flex:none;display:grid;justify-items:center;gap:4px;padding-left:24px;border-left:1px solid #ffcae025}
+.hero-growth-metric strong{color:#ffd4e7;font-size:42px;font-weight:650;line-height:1;letter-spacing:-2px;text-shadow:0 0 4px #ffb2d37a,0 0 16px #ef69a66b,0 0 32px #e24b9533}
+.hero-growth-metric strong span{display:inline-block;margin-left:2px;font-size:.65em;vertical-align:top;line-height:1.35}
+.hero-growth-metric>span{color:#e0b6cb;font-size:10px;line-height:1.4;letter-spacing:.25px}
+.hero-launch-copy{max-width:700px}
+.hero-launch-copy strong{color:#44434b;font-weight:550}
+.hero-detail.hero-crm-included{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px 12px;line-height:1.6}
+.hero-crm-label{display:inline-flex;align-items:center;gap:5px;padding:4px 10px;border:1px solid #e7c9d8;border-radius:999px;background:#fff6fa;color:#8d3e65;font-size:12px;font-weight:600;white-space:nowrap}
+.hero-crm-label svg{flex:none}
 .hero-social-backdrop{position:absolute;z-index:0;top:0;left:50%;width:min(100%,1800px);height:780px;transform:translateX(-50%);pointer-events:none;overflow:visible}
 .social-mark{position:absolute;display:grid;place-items:center;padding:46px;color:white;opacity:.67;border:1px solid #ffffffb8;border-radius:58px;box-shadow:0 55px 95px #183d8245,0 18px 34px #17213d38,inset 0 3px 3px #ffffffe6,inset 0 -12px 24px #001b6c38;filter:saturate(1.16);transform-style:preserve-3d;animation:social-float 9s ease-in-out infinite}
 .social-mark:before{content:"";position:absolute;z-index:-1;inset:17px -18px -20px 17px;border-radius:inherit;background:#174ca8;box-shadow:0 18px 38px #102d6952;transform:translateZ(-1px)}
@@ -27,6 +43,12 @@
 .social-mark-ads{width:clamp(340px,25vw,410px);height:clamp(260px,19vw,310px);right:72px;top:405px;padding:38px 50px 64px;background:linear-gradient(145deg,#1b7cff 0%,#075ad9 48%,#063b9f 100%);transform:perspective(750px) rotateY(-14deg) rotateX(12deg) rotateZ(-5deg);opacity:.62;animation-delay:-6s}
 .social-mark-ads:before{background:linear-gradient(145deg,#0646b5,#022a70)}
 .social-mark-ads small{position:absolute;z-index:2;bottom:25px;font-size:15px;font-weight:800;letter-spacing:2.8px;color:#fff;text-shadow:0 4px 10px #00286c;white-space:nowrap}
+/* The artwork carries its own material, bevel, perspective and soft shadows. */
+.social-mark.social-mark-rendered{padding:0;border:0;border-radius:0;background:none;box-shadow:none;filter:none;opacity:1;transform:none;animation-duration:12s}
+.social-mark-rendered:before,.social-mark-rendered:after{display:none}
+.social-mark-rendered>img{display:block;width:100%;height:100%;object-fit:contain}
+.social-mark-instagram.social-mark-rendered{width:clamp(350px,27vw,460px);height:clamp(350px,27vw,460px);left:-16px;top:0}
+.social-mark-facebook.social-mark-rendered{width:clamp(365px,28vw,480px);height:clamp(365px,28vw,480px);right:-16px;top:-12px}
 .creative-stage,.creative-browse,.stage-caption{position:relative;z-index:1}
 @keyframes social-float{0%,100%{translate:0 0}50%{translate:0 -14px}}
 
